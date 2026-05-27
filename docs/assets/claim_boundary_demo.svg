@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="560" viewBox="0 0 1120 560" role="img" aria-labelledby="title desc">
+  <title id="title">Claim-Boundary Audit demo</title>
+  <desc id="desc">A visual summary of bounded code-review feedback claims.</desc>
+  <rect width="1120" height="560" fill="#111827"/>
+  <rect x="42" y="42" width="1036" height="476" rx="18" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="78" y="94" fill="#f8fafc" font-family="Menlo, Consolas, monospace" font-size="30" font-weight="700">Claim-Boundary Audit</text>
+  <text x="78" y="132" fill="#cbd5e1" font-family="Menlo, Consolas, monospace" font-size="17">Code-review feedback can help one target surface without proving broad repair ability.</text>
+
+  <rect x="78" y="174" width="452" height="220" rx="12" fill="#1f2937" stroke="#64748b"/>
+  <text x="108" y="216" fill="#fca5a5" font-family="Menlo, Consolas, monospace" font-size="21" font-weight="700">Overclaim</text>
+  <text x="108" y="258" fill="#e5e7eb" font-family="Menlo, Consolas, monospace" font-size="16">"Feedback improves repair."</text>
+  <text x="108" y="302" fill="#fca5a5" font-family="Menlo, Consolas, monospace" font-size="16">Missing controls:</text>
+  <text x="108" y="336" fill="#fca5a5" font-family="Menlo, Consolas, monospace" font-size="16">shuffled text / no text / transfer</text>
+
+  <rect x="590" y="174" width="452" height="220" rx="12" fill="#1f2937" stroke="#64748b"/>
+  <text x="620" y="216" fill="#86efac" font-family="Menlo, Consolas, monospace" font-size="21" font-weight="700">Bounded claim</text>
+  <text x="620" y="258" fill="#e5e7eb" font-family="Menlo, Consolas, monospace" font-size="16">correct feedback beats controls</text>
+  <text x="620" y="292" fill="#e5e7eb" font-family="Menlo, Consolas, monospace" font-size="16">on local + transfer target selection</text>
+  <text x="620" y="336" fill="#86efac" font-family="Menlo, Consolas, monospace" font-size="16">claim: local+transfer utility</text>
+
+  <text x="108" y="456" fill="#f8fafc" font-family="Menlo, Consolas, monospace" font-size="20">Four-bridge aggregate: 4/4 positive bridges across both providers and controls.</text>
+  <text x="108" y="492" fill="#cbd5e1" font-family="Menlo, Consolas, monospace" font-size="17">The artifact reports what the evidence supports, and what it does not.</text>
+</svg>

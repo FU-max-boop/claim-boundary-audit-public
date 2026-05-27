@@ -1,0 +1,64 @@
+{
+  "analysis": "four_bridge_positive_meta_analysis",
+  "date": "2026-05-24",
+  "description": "Cached aggregate summary of four independent public code-review bridges from the submitted Claim-Boundary paper package.",
+  "scope": "Fixed-policy target-selection audit; not a downstream executable repair evaluation.",
+  "bridges": [
+    {"id": "gharchive", "name": "GH Archive PR reviews", "n_rows": 120},
+    {"id": "pr_review", "name": "PR_Review-Benchmark", "n_rows": 80},
+    {"id": "gerrit", "name": "OpenStack+Qt Gerrit", "n_rows": 80},
+    {"id": "crop", "name": "CROP inline reviews", "n_rows": 80}
+  ],
+  "controls": ["shuffled-feedback", "no-feedback"],
+  "providers": ["DeepSeek", "GLM-4.5"],
+  "metric": "joint local+transfer target-selection delta",
+  "bootstrap": {"n_boot": 4000, "seed": 20260524},
+  "rows": [
+    {
+      "provider": "DeepSeek",
+      "control": "shuffled-feedback",
+      "positive_bridges": "4/4",
+      "equal_weight_joint_delta": 0.231,
+      "equal_weight_ci95_low": 0.163,
+      "equal_weight_ci95_high": 0.322,
+      "row_pooled_joint_delta": 0.247,
+      "row_pooled_ci95_low": 0.194,
+      "row_pooled_ci95_high": 0.300
+    },
+    {
+      "provider": "DeepSeek",
+      "control": "no-feedback",
+      "positive_bridges": "4/4",
+      "equal_weight_joint_delta": 0.214,
+      "equal_weight_ci95_low": 0.150,
+      "equal_weight_ci95_high": 0.297,
+      "row_pooled_joint_delta": 0.228,
+      "row_pooled_ci95_low": 0.175,
+      "row_pooled_ci95_high": 0.281
+    },
+    {
+      "provider": "GLM-4.5",
+      "control": "shuffled-feedback",
+      "positive_bridges": "4/4",
+      "equal_weight_joint_delta": 0.245,
+      "equal_weight_ci95_low": 0.153,
+      "equal_weight_ci95_high": 0.362,
+      "row_pooled_joint_delta": 0.264,
+      "row_pooled_ci95_low": 0.211,
+      "row_pooled_ci95_high": 0.317
+    },
+    {
+      "provider": "GLM-4.5",
+      "control": "no-feedback",
+      "positive_bridges": "4/4",
+      "equal_weight_joint_delta": 0.228,
+      "equal_weight_ci95_low": 0.144,
+      "equal_weight_ci95_high": 0.319,
+      "row_pooled_joint_delta": 0.244,
+      "row_pooled_ci95_low": 0.197,
+      "row_pooled_ci95_high": 0.294
+    }
+  ],
+  "source_note": "Derived from the submitted package aggregate files outputs/reports/positive_bridge_meta_analysis_2026-05-24.json and outputs/reports/headline_evidence_table_2026-05-24.md. It contains aggregate statistics only, not per-example data."
+}
+

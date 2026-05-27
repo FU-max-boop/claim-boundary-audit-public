@@ -1,0 +1,41 @@
+{
+  "n": 8,
+  "threshold": 0.15,
+  "conditions": {
+    "correct_feedback": {
+      "local": 0.875,
+      "transfer": 0.625,
+      "joint_local_transfer": 0.625
+    },
+    "shuffled_feedback": {
+      "local": 0.0,
+      "transfer": 0.0,
+      "joint_local_transfer": 0.0
+    },
+    "no_feedback": {
+      "local": 0.125,
+      "transfer": 0.0,
+      "joint_local_transfer": 0.0
+    }
+  },
+  "deltas": {
+    "correct_minus_shuffled_feedback": {
+      "local": 0.875,
+      "transfer": 0.625,
+      "joint_local_transfer": 0.625
+    },
+    "correct_minus_no_feedback": {
+      "local": 0.75,
+      "transfer": 0.625,
+      "joint_local_transfer": 0.625
+    }
+  },
+  "source_families": {
+    "synthetic-code-review": 8
+  },
+  "stage_labels": {
+    "local": "correct-feedback-specific utility",
+    "transfer": "correct-feedback-specific utility"
+  },
+  "claim_label": "correct-feedback-specific local+transfer utility"
+}

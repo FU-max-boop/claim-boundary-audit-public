@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "Claim-Boundary Audit"
+message: "If you use this artifact, please cite the associated paper or this repository."
+type: software
+authors:
+  - family-names: Fu
+    given-names: Xiaonan
+year: 2026
+repository-code: "https://github.com/FU-max-boop/claim-boundary-audit"
+abstract: "A small artifact for calibrating local and transfer target-selection claims from code-review feedback traces."
+
